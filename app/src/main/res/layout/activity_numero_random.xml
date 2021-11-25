@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Number1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#45AABC"
+    android:backgroundTint="#75B8DD"
+    tools:context=".NumeroRandomActivity">
+
+    <TextView
+        android:id="@+id/textViewNumRandom"
+        android:layout_width="204dp"
+        android:layout_height="64dp"
+        android:background="#040202"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <Button
+        android:id="@+id/buttonGeneraNum"
+        android:layout_width="206dp"
+        android:layout_height="53dp"
+        android:background="#349131"
+        android:backgroundTint="#2F9148"
+        android:drawableTint="#955151"
+        android:foregroundTint="#E65100"
+        android:importantForAccessibility="yes"
+        android:text="Genera un Numero Random"
+        android:textColorHighlight="#B18C8C"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNumRandom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.861" />
+
+    <EditText
+        android:id="@+id/editTextNumber5"
+        android:layout_width="139dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="36dp"
+        android:backgroundTint="#190909"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGeneraNum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
+
+    <EditText
+        android:id="@+id/editTextNumber6"
+        android:layout_width="138dp"
+        android:layout_height="88dp"
+        android:backgroundTint="#1B0B0B"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGeneraNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumber5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="137dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="36dp"
+        android:background="#8AB0D1"
+        android:text="Ingresa el numero inicial de los posibles Random"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="139dp"
+        android:layout_height="29dp"
+        android:background="#8AB0D1"
+        android:text="Ingresa el numero final de los posibles Random"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.694" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
