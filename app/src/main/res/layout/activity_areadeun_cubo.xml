@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".AreadeunCuboActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="119dp"
+        android:layout_height="53dp"
+        android:text="123"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="129dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
